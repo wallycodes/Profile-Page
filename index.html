@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>   
+    <!--NAVBAR--> 
+    <div class="navbar">
+        <div class="menu">
+            <div class="menuItems">
+                <p class="logo">Profile</p>           
+                <p class="item">Home</p>
+                <p class="item">My Profile</p>
+                <p class="item">Find Connections</p>
+            </div>  
+            <div class="button">
+                <button class="blueBtn" type="submit">Sign Out</button>
+            </div>           
+        </div>                                 
+    </div>
+    <div class="content">
+        <div class="main">
+            <!--JANE DOE CARD-->
+            <div class="card">
+                <div class="blueHeader"></div>
+                <div class="jane">
+                    <img class="profilePic" src="jane-m.jpg" alt="">
+                    <p class="headerFont">Jane Doe</p>
+                </div>
+                <div class="location">
+                    <img src="map-marker.png" alt="" srcset="">
+                    <p>Seattle</p>
+                </div>
+                <div class="jobProfile">
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                </div>
+                <div class="editProfile">
+                    <img class="gearPic" src="gear.png" alt="" srcset="">
+                    <a onclick="changeName()" href="#"><p class="editP">edit profile</p></a>
+                </div>
+            </div>
+            <!--Education-->
+            <div class="card4">
+                <div class="greyHeader"><p class="barHeaders">Education</p></div>
+                <div class="headerFont2">                  
+                    <p>Coding Dojo - Full Stack Bootcamp</p>
+                </div>
+                <div class="feintFont">
+                    <p>Dec 2019 - Mar 2020</p>
+                </div>
+                <div class="headerFont3">
+                    <p>Triple black belt in Python, MERN, and C#</p>                    
+                </div>
+            </div>
+        </div>        
+        <!--Sidebar-->
+        <div class="sideBar">
+            <!--Connection Request-->
+            <div class="card2">
+                <div class="greyHeader">                    
+                    <div class="circle"><p class="number">2</p></div>
+                    <p class="barHeaders">Connection Requests</p>
+                </div>
+                <div class="profiles">
+                    <div class="profileCheck">
+                        <div class="person">
+                            <img src="todd-s.jpg" alt="">
+                            <p>Todd E</p>
+                        </div>
+                        
+                        <div class="answer">
+                            <img onclick="hide();more()" src="accept-circle.png" alt="">
+                            <img onclick="hide();less()" src="close-circle.png" alt="">
+                        </div>                    
+                    </div>
+                    <div class="profileCheck2">
+                        <div class="person">
+                            <img src="phil-s.jpg" alt="">
+                            <p>Phil K</p>
+                        </div>                        
+                        <div class="answer">
+                            <img onclick="hide2();more()" src="accept-circle.png" alt="">
+                            <img onclick="hide2();less()" src="close-circle.png" alt="">
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!--Your connections-->
+            <div class="card3">
+                <div class="greyHeader">               
+                    <div class="circle2"><p class="number2">500</p></div>
+                    <p class="barHeaders">Your connections</p>
+                </div>
+                <div class="profiles">
+                    <div class="profileCheck">
+                        <div class="person">
+                            <img src="adrien-s.jpg" alt="">
+                            <p>Adrien D</p>
+                        </div>                  
+                    </div>
+                    <div class="profileCheck">
+                        <div class="person">
+                            <img src="anne-s.jpg" alt="">
+                            <p>Anne J</p>
+                        </div>            
+                    </div>
+                    <div class="profileCheck">
+                        <div class="person">
+                            <img src="alayne-s.jpg" alt="">
+                            <p>Alayne T</p>
+                        </div>            
+                    </div>
+                    <div class="profileCheck">
+                        <div class="person">
+                            <img src="arry-s.jpg" alt="">
+                            <p>Arry Y</p>
+                        </div>            
+                    </div>                    
+                </div>
+                <div class="viewMore">                    
+                    <a href="#" target="_blank" rel="noopener noreferrer"><p>View More</p></a>                           
+                </div>
+            </div>
+        </div>                
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
